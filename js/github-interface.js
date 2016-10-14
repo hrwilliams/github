@@ -6,8 +6,8 @@ $(document).ready(function() {
     var userName = $('#user').val();
     $('#user').val("");
     $('#showRepos').text("The user you have chosen is " + userName + ".");
-    $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
-    console.log(response);
+    $.get('https://api.github.com/search/repositories?q=user:'+ userName + '&access_token=' + apiKey).then(function(response) {
+     console.log(response);
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });

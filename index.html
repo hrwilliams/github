@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/github.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
     <title>Github info</title>
   </head>
   <body>
-    <form id="github-form">
-      <label for="user">Enter a github username:</label>
-      <input id="user" type="string">
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="info"></ul>
+    <div class="container">
+      <h1>Git Github User Respositories!</h1>
+      <form id="github-form">
+        <label for="user">Enter a github username:</label>
+        <input id="user" type="text">
+        <button class="btn-success" id="githubUser">Git Dem User Repos!</button>
+      </form>
+      <p div id="showRepos"></div>
+    </div>
   </body>
 </html>

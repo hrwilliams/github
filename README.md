@@ -23,6 +23,7 @@ exports.apiKey = "your-github-api-key";
 ```
 $ npm install
 $ bower install
+$ gulp build
 $ gulp serve
 ```
 
